@@ -40,3 +40,13 @@ focusInput.addEventListener('focus', ()=>{
 focusInput.addEventListener('blur', ()=> {
     focusMsg.textContent = 'Unfocused.';
 });
+
+//deleggation
+const btnContainer = document.getElementById('btnContainer');
+const delegationMsg = document.getElementById('delegationMsg');
+
+btnContainer.addEventListener('click', (e)=> {
+    if (e.target.tagName === 'BUTTON'){
+        delegationMsg.textContent = e.target.dataset.label;
+    }
+});
