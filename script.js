@@ -10,3 +10,21 @@ hoverBtn.addEventListener('mouseout', () => {
   mouseMsg.textContent = 'Mouse left the button.';
 });
 
+//Keyboard events
+const keyInput = document.getElementById('keyInput');
+const keyMsg = document.getElementById('keyMsg');
+
+keyInput.addEventListener('keydown', (e) => {
+  keyMsg.textContent = `Last key pressed: ${e.key}`;
+});
+
+//Form 
+const form1 = document.getElementById('form1');
+const formMsg = document.getElementById('formMsg');
+const formInput = document.getElementById('formInput');
+
+form1.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formMsg.textContent = `Form input: "${formInput.value}" submitted successfully!`;
+    form1.reset();
+});

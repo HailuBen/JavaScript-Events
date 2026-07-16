@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="script.js" defer></script>
     <title>Events</title>
 </head>
+
 <body>
     <h1>JavaScript Event Handling</h1>
 
@@ -15,5 +17,21 @@
         <button id="hoverBtn">Hover me!</button>
         <p id="mouseMsg">Waiting for hover...</p>
     </section>
+
+    <section id="keyboard-section">
+        <h3>Keyboard Events</h3>
+        <input type="text" id="keyInput" placeholder="Type something...">
+        <p id="keyMsg">Last key pressed: none</p>
+    </section>
+
+    <section id="form-section">
+        <h3>Form Events</h3>
+        <form id="form1">
+            <input type="text" id="formInput" placeholder="Enter text" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMsg"></p>
+    </section>
 </body>
+
 </html>
